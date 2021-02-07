@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.#00ccffmin.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/gh/viperadnan-git/viperadnan-git.github.io@2.1.0/jquery.cookie.js"></script>
         <title>Asif</title>
         <style>
@@ -23,32 +23,32 @@
             font-size:8px;
             margin-top:14px;
             }
+            .btn {
+              margin-top:8px;
+              margin-right:4px;
+            }
         </style>
     </head>
     <body>
-        <nav class="navbar border-bottom border-primary border-2">
-            <div class="container-fluid ">
-                <span class="navbar-brand mb-0 h3 fw-bolder"></span>
-                <div class="form-check form-switch">
-                    <button onclick="if ($(this).hasClass('btn-dark')) { dark();$.cookie('mode', 1); } else { light();$.removeCookie('mode'); }" class="btn btn-dark" id="button"></button>
-                </div>
+            <div class="container-fluid border-bottom text-center border-primary border-2">
+                <h1 style="margin:6px;font-size:28px;" class="navbar-brand fw-bolder">&Copf;&yopf;&bopf;&eopf;&ropf; &Ropf;&aopf;&bopf;&bopf;&iopf;&topf; &Xopf;</h1>
             </div>
-        </nav>
         <div class="container">
             <div class="card">
                 <img src="https://i.ibb.co/SVVhYp8/IMG-20210125-161315.jpg" class="card-img-top">
                 <div class="card-body">
                     <p class="card-text fw-bold">Hey ! I am Asif Ahmad from New Delhi, India. I am 18 year old. Currently studying about Mechanical Engineering. I would like to hang out with friends in my free time.</p>
-                    <a href="https://movie.hackex.cf" class="btn btn-primary">file</a>
-                    <a href="https://gentle-wood-a167.spyasif.workers.dev" class="btn btn-primary">rarbg proxy</a>
-                    <a href="https://gentle-wood-a167.spyasif.workers.dev" class="btn btn-primary">mkvcinemas proxy</a>
-                    <a href="https://gentle-wood-a167.spyasif.workers.dev" class="btn btn-primary">pornhub proxy</a>
-                    <a href="https://gentle-wood-a167.spyasif.workers.dev" class="btn btn-primary">pornripsto proxy</a>
+                    <a href="https://movie.hackex.cf" class="btn btn-dark">file</a>
+                    <a href="https://gentle-wood-a167.spyasif.workers.dev" class="btn btn-dark">rarbg proxy</a>
+                    <a href="https://gentle-wood-a167.spyasif.workers.dev" class="btn btn-dark">mkvcinemas proxy</a>
+                    <a href="https://gentle-wood-a167.spyasif.workers.dev" class="btn btn-dark">pornhub proxy</a>
+                    <a href="https://gentle-wood-a167.spyasif.workers.dev" class="btn btn-dark">pornripsto proxy</a>
                 </div>
             </div>
             <div class="card">
                 <div class="icons card-body" align="center">
-                    <h6 class="card-title text-muted">Contact Me</h6>
+                    <button onclick="if ($(this).hasClass('btn-dark')) { dark();$.cookie('mode', 1); } else { light();$.removeCookie('mode'); }" class="btn btn-dark card-title" id="button">Contact Me</button>
+                    <br>
                     <a href="https://facebook.com/Spyinbound"><img src="https://img.icons8.com/plasticine/400/000000/facebook-new.png"></a>
                     <a href="https://instagram.com/Spyinbound"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png"/></a>
                     <a href="https://twitter.com/Spyinbound"><img src="https://img.icons8.com/plasticine/100/000000/twitter--v2.png"/></a>
@@ -59,8 +59,6 @@
             </div>
             <div class="copyright">
                 <p class="text-center text-muted">Copyright &copy; 2021 — All Rights Reserved<br><a class="text-decoration-none" href="https://viperadnan-git.github.io">Adnan Ahmad  </a></p>
-                
-                
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
@@ -70,17 +68,15 @@
         }
         function light() {
           $(".card, body").removeClass("bg-dark");
-          $(".card").removeClass("text-white");
-          $(".navbar-brand").removeClass("text-white");
-          $("#button").addClass("btn-dark");
-          $("#button").removeClass("btn-light");
+          $(".card, h1").removeClass("text-white");
+          $(".btn").addClass("btn-dark");
+          $(".btn").removeClass("btn-light");
         }
         function dark() {
           $(".card, body").addClass("bg-dark");
-          $(".card").addClass("text-white");
-          $(".navbar-brand").addClass("text-white");
-          $("#button").removeClass("btn-dark");
-          $("#button").addClass("btn-light");
+          $(".card, h1").addClass("text-white");
+          $(".btn").removeClass("btn-dark");
+          $(".btn").addClass("btn-light");
         }
       </script>
     </body>
