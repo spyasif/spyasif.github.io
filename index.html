@@ -6,7 +6,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/gh/viperadnan-git/viperadnan-git.github.io@2.1.0/jquery.cookie.js"></script>
-        <title>Asif</title>
+        <title>SPY</title>
         <style>
             .icons img {
             width:60px;
@@ -23,7 +23,9 @@
             font-size:8px;
             margin-top:14px;
             }
-            .btn {
+            .badge {
+              font-size:20px;
+              text-decoration: none;
               margin-top:8px;
               margin-right:4px;
             }
@@ -38,11 +40,11 @@
                 <img src="https://i.ibb.co/SVVhYp8/IMG-20210125-161315.jpg" class="card-img-top">
                 <div class="card-body">
                     <p class="card-text fw-bold">Hey ! I am Asif Ahmad from New Delhi, India. I am 18 year old. Currently studying about Mechanical Engineering. I would like to hang out with friends in my free time.</p>
-                    <a href="https://movie.hackex.cf" class="btn btn-dark">file</a>
-                    <a href="https://1337x.to" class="btn btn-dark">Torrent</a>
-                    <a href="https://mkvcinemas.ink" class="btn btn-dark">mkv cinemas</a>
-                    <a href="https://pornrips.to" class="btn btn-dark">porn hub </a>
-                    <a href="https://pornhub.org" class="btn btn-dark">porn ripsto</a>
+                    <a href="https://movie.hackex.cf" class="badge rounded-pill bg-dark">File</a>
+                    <a href="https://1337x.to" class="badge rounded-pill bg-dark">Torrent</a>
+                    <a href="https://mkvcinemas.ink" class="badge rounded-pill bg-dark">MkvCinemas</a>
+                    <a href="https://pornhub.org" class="badge rounded-pill bg-dark">PornHub</a>
+                    <a href="https://pornrips.to" class="badge rounded-pill bg-dark">PornRips</a>
                 </div>
             </div>
             <div class="card">
@@ -69,12 +71,16 @@
         function light() {
           $(".card, body").removeClass("bg-dark");
           $(".card, h1").removeClass("text-white");
+          $(".badge").removeClass('bg-white text-dark');
+          $(".badge").addClass('bg-dark');
           $(".btn").addClass("btn-dark");
           $(".btn").removeClass("btn-light");
         }
         function dark() {
           $(".card, body").addClass("bg-dark");
           $(".card, h1").addClass("text-white");
+          $(".badge").removeClass('bg-dark');
+          $(".badge").addClass('bg-white text-dark');
           $(".btn").removeClass("btn-dark");
           $(".btn").addClass("btn-light");
         }
